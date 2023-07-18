@@ -33,9 +33,10 @@ We are **NOT** responsible for any data loss, or the result of a device being br
 
 - **USB-A** cables are recommended to use, USB-C may have issues with palera1n and getting into DFU mode.<details><summary>Technical explanation</summary>The BootROM will only enter DFU if it detects USB voltage, which boils down to checking whether a certain pin is asserted from the Tristar chip. The Tristar does this based on the cable's accessory ID, and apparently USB-A and USB-C cables have different accessory IDs, and the one of the USB-C cables makes the Tristar not assert the USB voltage pin.</details>
 
-- A Linux or macOS computer
+- A Linux, Windows or macOS computer
 	- AMD CPUs (not AMD Mobile) have an issue [with (likely) their USB controllers] that causes them to have a very low success rate with checkm8. It is not recommended that you use them with palera1n.
 		- If your device does not successfully jailbreak, try a computer with an Intel or other CPU
+  - Windows support is experimental right now. Do not ask for support with it.
     
 - Apple Silicon Macs with USB-C
 	- USB-C port on Apple Silicon Macs may require manual unplugging and replugging of the lightning cable after checkm8 exploit.
